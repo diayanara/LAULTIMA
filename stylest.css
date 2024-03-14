@@ -214,16 +214,36 @@ header .menu li a:active{
 
 /* Cuerpo*/
 
-#seccionp {
-   
-   display: flex;
-   text-align: center;
-   columns: 2px;
-   align-items: center;
+/* Resto de tus estilos CSS aquí */
 
-   
-   padding: 50px;
+#seccionp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
+
+#seccionp img {
+    width: 100%;
+    max-width: 300px; /* Establecer un ancho máximo para las imágenes */
+    height: auto;
+    margin: 10px; /* Agregar un margen entre las imágenes */
+}
+
+/* Media queries para dispositivos móviles */
+
+@media (max-width: 768px) {
+    #seccionp {
+        padding: 10px; /* Reducir el relleno en dispositivos móviles */
+    }
+    #seccionp img {
+        max-width: 100%; /* Ajustar el ancho máximo de las imágenes */
+        margin: 5px; /* Reducir el margen entre las imágenes */
+    }
+    /* Otros ajustes específicos para dispositivos móviles */
+}
+
 
 #seccionp img {
     
